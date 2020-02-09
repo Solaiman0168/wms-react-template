@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
+import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="mx-auto">
+              <Nav.Link href="#about-us">About Us</Nav.Link>
+              <Nav.Link href="#product">Product</Nav.Link>
+              <Nav.Link href="#solution">Solution</Nav.Link>
+              <Nav.Link href="#support">Support</Nav.Link>
+          </Nav>
+          <Form inline>
+              <Nav.Link href="#sign-in">Sign In</Nav.Link>
+              <Nav.Link href="#sign-up">Sign Up</Nav.Link>
+              <Nav.Link href="#search-button"><FontAwesomeIcon icon="search" /></Nav.Link>
+              {/*<FormControl type="text" placeholder="Search" className="mr-sm-2" />*/}
+              {/*<Button variant="outline-info">Search</Button>*/}
+          </Form>
+      </Navbar>
   );
 }
 
