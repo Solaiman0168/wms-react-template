@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700|Oswald:400,500,600,700|Roboto:400,500,700&display=swap');
+
+
+//Template common class
+@import "vendor/variable";
+
+//Template base section
+@import "base/nav";
+@import "base/banner";
+@import "base/footer";
+
+//Home-page section
+@import "tools/home-page/iconsection";
+@import "tools/home-page/wmsimagesection";
+@import "tools/home-page/testimonialslider";
+
+//Contact-page section
+@import "tools/contact-page/contact.scss";
+
+//Template scroll top button
+@import "vendor/scrolltop";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+
+//Template common class
+$wmsFont1: 'Roboto', sans-serif;
+$wmsFont2: 'Oswald', sans-serif;
+$wmsFont3: 'Montserrat', sans-serif;
+$btnbgColor: #08A7D0;
+$textColor: #FFFFFF;
+
+
+//Template html body common class
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $wmsFont1;
+  overflow-x: hidden;
+  position: relative;
+  h1,h2,h3,h4,h5,h6{
+    font-family: $wmsFont2;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .container{
+    max-width: 1440px !important;
+  }
+
+
+}
+
+
