@@ -5,67 +5,12 @@ img{
   max-width: 100%;
 }
 .banner_section {
-  background-image: url('../images/banner_bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  //overflow: hidden;
 
   .container-fluid{
-    //height: 100%;
-    //.hero-content{
-    //  display: flex;
-    //  height: 100%;
-    //  justify-content: center;
-    //  align-items: center;
-    //  flex-direction: column;
-    //  max-width: 650px;
-    //  width: 50%;
-    //  z-index: 10;
-    //  margin-left: 50px;
-    //  .hero-content-box{
-    //    z-index: 10;
-    //    padding-top: 40px;
-    //    h1{
-    //      font-size: 52px;
-    //      font-family: $wmsFont2;
-    //      margin-bottom: 1px;
-    //      color:#137EA4;
-    //      line-height: 77px;
-    //    }
-    //    h3{
-    //      font-size: 22px;
-    //      color: #808080;
-    //
-    //    }
-    //    p{
-    //      margin-top: 44px;
-    //      margin-bottom: 56px;
-    //      font-size: 25px;
-    //    }
-    //    .schedule_button{
-    //      border-radius: 3px;
-    //      font-size: 32px;
-    //      background-color: $btnbgColor;
-    //      @media (max-width: 760px){
-    //        border-radius: 1px;
-    //        font-size: 16px;
-    //       img{
-    //         width: 16px;
-    //         height: 16px;
-    //       }
-    //      }
-    //    }
-    //  }
-    //}
-    //.hero-img{
-    //  position: absolute;
-    //  right: 5%;
-    //  bottom: 40px;
-    //  max-width: 946px;
-    //  width: 50%;
-    //}
     .banner_content{
       .wms-icon{
         margin-top: 75px;

@@ -7,6 +7,7 @@
 
 nav {
   background-color: #2E2E32!important;
+  overflow: hidden;
   .navbar-toggler {
     color: #17a2b8a8!important;
     border-color: #17a2b8a8!important;
@@ -15,14 +16,14 @@ nav {
     ul {
       font-size: 22px;
       li{
-        a{
+        NavLink{
           color: #FFFFFF!important;
         }
-        a:hover, a:focus{
+        NavLink:hover, NavLink:focus{
           color: #0062cc!important;
         }
       }
-      li.active > a {
+      NavLink.active > NavLink {
         color: #0062cc!important;
       }
     }
@@ -56,7 +57,7 @@ nav {
       ul {
         font-size: 18px;
         li{
-          a{
+          NavLink{
             color: #FFFFFF!important;
           }
         }
@@ -90,7 +91,7 @@ nav {
       ul {
         font-size: 16px;
         li{
-          a{
+          NavLink{
             color: #FFFFFF!important;
           }
         }
@@ -131,7 +132,7 @@ nav {
       ul {
         font-size: 16px;
         li{
-          a{
+          NavLink{
             color: #FFFFFF!important;
           }
         }
@@ -167,7 +168,7 @@ nav {
       ul {
         font-size: 16px;
         li{
-          a{
+          NavLink{
             color: #FFFFFF!important;
           }
         }
@@ -199,7 +200,7 @@ nav {
       ul {
         font-size: 16px;
         li{
-          a{
+          NavLink{
             color: #FFFFFF!important;
           }
         }

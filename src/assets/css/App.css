@@ -24,17 +24,18 @@ body {
   box-sizing: border-box; }
 
 nav {
-  background-color: #2E2E32 !important; }
+  background-color: #2E2E32 !important;
+  overflow: hidden; }
   nav .navbar-toggler {
     color: #17a2b8a8 !important;
     border-color: #17a2b8a8 !important; }
   nav div ul {
     font-size: 22px; }
-    nav div ul li a {
+    nav div ul li NavLink {
       color: #FFFFFF !important; }
-    nav div ul li a:hover, nav div ul li a:focus {
+    nav div ul li NavLink:hover, nav div ul li NavLink:focus {
       color: #0062cc !important; }
-    nav div ul li.active > a {
+    nav div ul NavLink.active > NavLink {
       color: #0062cc !important; }
   nav div form li {
     list-style: none;
@@ -52,7 +53,7 @@ nav {
   @media screen and (max-width: 1280px) {
     nav div ul {
       font-size: 18px; }
-      nav div ul li a {
+      nav div ul li NavLink {
         color: #FFFFFF !important; }
     nav div form li {
       list-style: none;
@@ -66,7 +67,7 @@ nav {
   @media screen and (max-width: 1024px) {
     nav div ul {
       font-size: 16px; }
-      nav div ul li a {
+      nav div ul li NavLink {
         color: #FFFFFF !important; }
     nav div form li {
       list-style: none;
@@ -87,7 +88,7 @@ nav {
       padding-left: 10px; }
       nav div ul {
         font-size: 16px; }
-        nav div ul li a {
+        nav div ul li NavLink {
           color: #FFFFFF !important; }
       nav div form {
         padding-top: 15px;
@@ -107,7 +108,7 @@ nav {
       padding-left: 10px; }
       nav div ul {
         font-size: 16px; }
-        nav div ul li a {
+        nav div ul li NavLink {
           color: #FFFFFF !important; }
       nav div form li {
         list-style: none;
@@ -121,7 +122,7 @@ nav {
   @media screen and (max-width: 380px) {
     nav div ul {
       font-size: 16px; }
-      nav div ul li a {
+      nav div ul li NavLink {
         color: #FFFFFF !important; }
     nav div form li {
       list-style: none;
@@ -137,7 +138,6 @@ img {
   max-width: 100%; }
 
 .banner_section {
-  background-image: url("../images/banner_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -263,10 +263,10 @@ img {
       @media (max-width: 480px) {
         .footer_bg .footer-content .footer_des .footer_list li {
           font-size: 14px; } }
-      .footer_bg .footer-content .footer_des .footer_list li a {
+      .footer_bg .footer-content .footer_des .footer_list li Link {
         text-decoration: none;
         color: #FFFFFF; }
-      .footer_bg .footer-content .footer_des .footer_list li a:hover {
+      .footer_bg .footer-content .footer_des .footer_list li Link:hover {
         color: skyblue; }
     .footer_bg .footer-content .footer_des .footer_li_con li {
       list-style: none;
@@ -277,23 +277,23 @@ img {
       .footer_bg .footer-content .footer_des .footer_li_con li:first-child, .footer_bg .footer-content .footer_des .footer_li_con li:last-child {
         padding-left: 0;
         padding-right: 0; }
-      .footer_bg .footer-content .footer_des .footer_li_con li a {
+      .footer_bg .footer-content .footer_des .footer_li_con li Link {
         text-decoration: none;
         color: #FFFFFF;
         font-size: 26px; }
         @media (max-width: 768px) {
-          .footer_bg .footer-content .footer_des .footer_li_con li a {
+          .footer_bg .footer-content .footer_des .footer_li_con li Link {
             font-size: 20px; } }
         @media (max-width: 480px) {
-          .footer_bg .footer-content .footer_des .footer_li_con li a {
+          .footer_bg .footer-content .footer_des .footer_li_con li Link {
             font-size: 18px; } }
-        .footer_bg .footer-content .footer_des .footer_li_con li a .fa-instagram:hover {
+        .footer_bg .footer-content .footer_des .footer_li_con li Link .fa-instagram:hover {
           color: #e4405f; }
-        .footer_bg .footer-content .footer_des .footer_li_con li a .fa-twitter:hover {
+        .footer_bg .footer-content .footer_des .footer_li_con li Link .fa-twitter:hover {
           color: #55acee; }
-        .footer_bg .footer-content .footer_des .footer_li_con li a .fa-facebook:hover {
+        .footer_bg .footer-content .footer_des .footer_li_con li Link .fa-facebook:hover {
           color: #3b5999; }
-        .footer_bg .footer-content .footer_des .footer_li_con li a .fa-globe:hover {
+        .footer_bg .footer-content .footer_des .footer_li_con li Link .fa-globe:hover {
           color: deepskyblue; }
     .footer_bg .footer-content .copyright {
       font-size: 13px;

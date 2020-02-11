@@ -41,11 +41,11 @@
           @media (max-width: 480px){
             font-size: 14px;
           }
-          a{
+          Link{
             text-decoration: none;
             color: #FFFFFF;
           }
-          a:hover{
+          Link:hover{
             color: skyblue;
           }
         }
@@ -63,7 +63,7 @@
             padding-left: 0;
             padding-right: 0;
           }
-          a{
+          Link{
             text-decoration: none;
             color: #FFFFFF;
             font-size: 26px;
