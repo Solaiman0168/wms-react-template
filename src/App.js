@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './assets/css/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Landingpage from "./components/landingpage";
 import Aboutus from "./components/aboutus";
 import Product from "./components/product";

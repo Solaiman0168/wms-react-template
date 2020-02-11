@@ -37,7 +37,7 @@ class Navbar extends Component {
                             <NavLink className="nav-link btn-signup"  to="">Sign Out</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link"  to=""><i className="fa fa-search text-white" /></NavLink>
+                            <NavLink className="nav-link"  to=""><i className="fa fa-search text-white"></i></NavLink>
                         </li>
                     </form>
                 </div>

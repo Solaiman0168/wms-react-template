@@ -10,7 +10,11 @@ import ImageSec3 from "../assets/images/Mask_Group_3.png";
 
 
 var sectionStyle = {
-    backgroundImage: `url(${BannerImage})`
+    backgroundImage: `url(${BannerImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    position: 'relative',
 }
 var sectionStyle1 = {
     backgroundImage: `url(${ImageSec1})`,
