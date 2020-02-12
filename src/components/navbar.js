@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
+
 
 
 
@@ -8,36 +9,35 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">
-                <NavLink className="navbar-brand" to="/"> <Image src="" alt="WMS-Logo" /> </NavLink>
-                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                        data-target="#navb">
+                <Link className="navbar-brand" to="/"> <Image src="assets/images/logo.png" alt="WMS-Logo" /> </Link>
+                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
                     <span className="navbar-toggler-icon" />
                 </button>
 
                 <div className="collapse navbar-collapse" id="navb">
                     <ul className="navbar-nav mr-auto mx-auto">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/aboutus">About Us</NavLink>
+                            <Link className="nav-link text-white" to="/aboutus">About Us</Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/product">Product</NavLink>
+                            <Link className="nav-link text-white" to="/product">Product</Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/solution">Solution</NavLink>
+                            <Link className="nav-link text-white" to="/solution">Solution</Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/support">Support</NavLink>
+                            <Link className="nav-link text-white" to="/support">Support</Link>
                         </li>
                     </ul>
                     <form className="form-inline">
                         <li className="nav-item">
-                            <NavLink className="nav-link text-white"  to="">Sign In</NavLink>
+                            <Link className="nav-link sign-in text-white"  to="">Sign In</Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link btn-signup"  to="">Sign Out</NavLink>
+                            <Link className="nav-link btn-signup"  to="">Sign Up</Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link"  to=""><i className="fa fa-search text-white"></i></NavLink>
+                            <Link className="nav-link"  to=""><i className="fa fa-search"></i></Link>
                         </li>
                     </form>
                 </div>

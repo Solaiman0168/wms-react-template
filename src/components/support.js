@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Iframe from 'react-iframe';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import ImageContactBannerSec from "../assets/images/contact-bg.png";
 
 
@@ -46,10 +46,10 @@ class Support extends Component {
                                 <hr className="w-50 border-bottom"/>
                                 <p>Social Links:</p>
                                 <ul className="social-sec">
-                                    <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
-                                    <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
-                                    <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
-                                    <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
+                                    <li><Link to="#"><i className="fa fa-facebook"></i></Link></li>
+                                    <li><Link to="#"><i className="fa fa-twitter"></i></Link></li>
+                                    <li><Link to="#"><i className="fa fa-instagram"></i></Link></li>
+                                    <li><Link to="#"><i className="fa fa-linkedin"></i></Link></li>
                                 </ul>
                             </div>
 

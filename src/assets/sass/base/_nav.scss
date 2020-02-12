@@ -6,24 +6,23 @@
 }
 
 nav {
-  background-color: #2E2E32!important;
-  overflow: hidden;
+  background-color: #2E2E32;
   .navbar-toggler {
-    color: #17a2b8a8!important;
-    border-color: #17a2b8a8!important;
+    color: #17a2b8a8;
+    border-color: #17a2b8a8;
   }
   div {
     ul {
       font-size: 22px;
       li{
-        NavLink{
+      .nav-link{
           color: #FFFFFF!important;
         }
-        NavLink:hover, NavLink:focus{
+       .nav-link:hover, .nav-link:focus{
           color: #0062cc!important;
         }
       }
-      NavLink.active > NavLink {
+       li.active > .nav-link {
         color: #0062cc!important;
       }
     }
@@ -33,6 +32,13 @@ nav {
       li{
         list-style: none;
         font-size: 22px;
+        .sign-in{
+          color: #FFFFFF!important;
+        }
+        .sign-in:hover, .sign-in:focus{
+          color: #0062cc!important;
+        }
+
         .btn-signup{
           color: #2E2E32;
           background-color: #FFFFFF;
@@ -57,7 +63,7 @@ nav {
       ul {
         font-size: 18px;
         li{
-          NavLink{
+         .nav-link{
             color: #FFFFFF!important;
           }
         }
@@ -91,7 +97,7 @@ nav {
       ul {
         font-size: 16px;
         li{
-          NavLink{
+         .nav-link{
             color: #FFFFFF!important;
           }
         }
@@ -132,7 +138,7 @@ nav {
       ul {
         font-size: 16px;
         li{
-          NavLink{
+         .nav-link{
             color: #FFFFFF!important;
           }
         }
@@ -168,7 +174,7 @@ nav {
       ul {
         font-size: 16px;
         li{
-          NavLink{
+         .nav-link{
             color: #FFFFFF!important;
           }
         }
@@ -200,7 +206,7 @@ nav {
       ul {
         font-size: 16px;
         li{
-          NavLink{
+         .nav-link{
             color: #FFFFFF!important;
           }
         }

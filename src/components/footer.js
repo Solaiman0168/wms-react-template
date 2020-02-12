@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 
-
 class Footer extends Component {
     render() {
         return (
@@ -12,7 +11,7 @@ class Footer extends Component {
                     <div className="container-fluid footer-content">
                         <div className="row ">
                             <div className="col-md-3 cl-sm-6 footer_des">
-                                <p className="font-weight-bold text-white site-link">Support</p>
+                                <p className="font-weight-bold text-white site-a">Support</p>
                                 <ul className="footer_list">
                                     <li><Link to="#">Home</Link></li>
                                     <li><Link to="#">Discovery</Link></li>
@@ -21,7 +20,7 @@ class Footer extends Component {
                                 </ul>
                             </div>
                             <div className="col-md-3 col-sm-12 footer_des">
-                                <p className="font-weight-bold text-white site-link">How Do I ?</p>
+                                <p className="font-weight-bold text-white site-a">How Do I ?</p>
                                 <ul className="footer_list">
                                     <li><Link to="#">About</Link></li>
                                     <li><Link to="#">Help</Link></li>
@@ -30,7 +29,7 @@ class Footer extends Component {
                                 </ul>
                             </div>
                             <div className="col-md-3 col-sm-12 footer_des">
-                                <p className="font-weight-bold text-white site-link">Quick Links</p>
+                                <p className="font-weight-bold text-white site-a">Quick as</p>
                                 <ul className="footer_list">
                                     <li><Link to="#">Site Map</Link></li>
                                     <li><Link to="#">Privacy Policy</Link></li>
@@ -39,7 +38,7 @@ class Footer extends Component {
                                 </ul>
                             </div>
                             <div className="col-md-3 col-sm-12 footer_des">
-                                <p className="font-weight-bold text-white media-link">Connect</p>
+                                <p className="font-weight-bold text-white media-a">Connect</p>
                                 <ul className="footer_li_con">
                                     <li><Link to="#"><i className="fa fa-instagram"></i></Link></li>
                                     <li><Link to="#"><i className="fa fa-twitter"></i></Link></li>

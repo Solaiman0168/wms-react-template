@@ -15,7 +15,7 @@
       @media (max-width: 480px){
         margin-bottom: 25px;
       }
-      .site-link{
+      .site-a{
         font-size: 20px;
         margin-bottom: 5px;
         font-family: $wmsFont3;
@@ -23,7 +23,7 @@
           font-size: 18px;
         }
       }
-      .media-link{
+      .media-a{
         font-size: 25px;
         margin-bottom: 10px;
         @media (max-width: 480px){
@@ -41,11 +41,11 @@
           @media (max-width: 480px){
             font-size: 14px;
           }
-          Link{
+          a{
             text-decoration: none;
             color: #FFFFFF;
           }
-          Link:hover{
+          a:hover{
             color: skyblue;
           }
         }
@@ -63,7 +63,7 @@
             padding-left: 0;
             padding-right: 0;
           }
-          Link{
+          a{
             text-decoration: none;
             color: #FFFFFF;
             font-size: 26px;
