@@ -58,9 +58,10 @@
           color: #FFFFFF;
           padding-left: 19px;
           padding-right: 19px;
-          &:first-child,
-          &:last-child {
+          &:first-child{
             padding-left: 0;
+          }
+          &:last-child {
             padding-right: 0;
           }
           a{
