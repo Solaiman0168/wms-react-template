@@ -11,48 +11,47 @@ class Footer extends Component {
                     <div className="container-fluid footer-content">
                         <div className="row ">
                             <div className="col-md-3 cl-sm-6 footer_des">
-                                <p className="font-weight-bold text-white site-a">Support</p>
+                                <p className="font-weight-bold text-white site-link">Support</p>
                                 <ul className="footer_list">
-                                    <li><Link to="#">Home</Link></li>
-                                    <li><Link to="#">Discovery</Link></li>
-                                    <li><Link to="#">Photos</Link></li>
-                                    <li><Link to="#">Contact</Link></li>
+                                    <li><a to="/">Home</a></li>
+                                    <li><a to="/">Discovery</a></li>
+                                    <li><a to="/">Photos</a></li>
+                                    <li><a to="/">Contact</a></li>
                                 </ul>
                             </div>
                             <div className="col-md-3 col-sm-12 footer_des">
-                                <p className="font-weight-bold text-white site-a">How Do I ?</p>
+                                <p className="font-weight-bold text-white site-link">How Do I ?</p>
                                 <ul className="footer_list">
-                                    <li><Link to="#">About</Link></li>
-                                    <li><Link to="#">Help</Link></li>
-                                    <li><Link to="#">Terms</Link></li>
-                                    <li><Link to="#">Guidelines</Link></li>
+                                    <li><a to="/">About</a></li>
+                                    <li><a to="/">Help</a></li>
+                                    <li><a to="/">Terms</a></li>
+                                    <li><a to="/">Guidelines</a></li>
                                 </ul>
                             </div>
                             <div className="col-md-3 col-sm-12 footer_des">
-                                <p className="font-weight-bold text-white site-a">Quick as</p>
+                                <p className="font-weight-bold text-white site-link">Quick Links</p>
                                 <ul className="footer_list">
-                                    <li><Link to="#">Site Map</Link></li>
-                                    <li><Link to="#">Privacy Policy</Link></li>
-                                    <li><Link to="#">Terms of service</Link></li>
-                                    <li><Link to="#">Cookie Policy</Link></li>
+                                    <li><a to="/">Site Map</a></li>
+                                    <li><a to="/">Privacy Policy</a></li>
+                                    <li><a to="/">Terms of service</a></li>
+                                    <li><a to="/">Cookie Policy</a></li>
                                 </ul>
                             </div>
                             <div className="col-md-3 col-sm-12 footer_des">
-                                <p className="font-weight-bold text-white media-a">Connect</p>
+                                <p className="font-weight-bold text-white media-link">Connect</p>
                                 <ul className="footer_li_con">
-                                    <li><Link to="#"><i className="fa fa-instagram"></i></Link></li>
-                                    <li><Link to="#"><i className="fa fa-twitter"></i></Link></li>
-                                    <li><Link to="#"><i className="fa fa-facebook"></i></Link></li>
-                                    <li><Link to="#"><i className="fa fa-globe"></i></Link></li>
+                                    <li><a to="/"><i className="fa fa-instagram"></i></a></li>
+                                    <li><a to="/"><i className="fa fa-twitter"></i></a></li>
+                                    <li><a to="/"><i className="fa fa-facebook"></i></a></li>
+                                    <li><a to="/"><i className="fa fa-globe"></i></a></li>
                                 </ul>
                             </div>
-                            <div className="col-md-6 col-sm-12">
-                                <p className="copyright">Copyright © 2020 WMS. All Rights
+                            <div className="col-md-12">
+                                <p className="copyright">Copyright &copy; 2020 WMS. All Rights
                                     Reserved. &nbsp;  | &nbsp; Designed and developed by Combosoft.</p>
                             </div>
                         </div>
                     </div>
-
                 </footer>
             </div>
 

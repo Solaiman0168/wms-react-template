@@ -19,80 +19,77 @@ class Support extends Component {
 
             <div>
                 <Navbar />
-                {/*--------Contact-banner-section----------*/}
-                <div className="container-fluid contact-banner-sec" style={sectionStyle} />
 
-                {/*-------Contact Us  Content--------*/}
-                <div className="container contact-content">
-                    <div className="d-flex justify-content-center align-items-center">
-                        <h1>Contact Us</h1>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6 col-sm-12">
-                            <div className="information-sec">
-                                <p className="contact-info">Contact Information</p>
-                                <p>Address:</p>
-                                <p>Flat – 02, Warren Hasting Court,Pier Road</p>
-                                <p>City, Gravesend, DA 11 9NL</p>
-                                <p>United Kingdom</p>
-                                <hr className="w-50 border-bottom"/>
-                                <p>Phone Number:</p>
-                                <p>800-820-9814</p>
-                                <hr className="w-50 border-bottom"/>
-                                <p>Our phone hours are:</p>
-                                <p>Sales: Monday-Friday, 8 am to 9 pm EST</p>
-                                <br/>
-                                <p>Saturday-Sunday, 8 am to 8 pm EST</p>
-                                <hr className="w-50 border-bottom"/>
-                                <p>Social Links:</p>
-                                <ul className="social-sec">
-                                    <li><Link to="#"><i className="fa fa-facebook"></i></Link></li>
-                                    <li><Link to="#"><i className="fa fa-twitter"></i></Link></li>
-                                    <li><Link to="#"><i className="fa fa-instagram"></i></Link></li>
-                                    <li><Link to="#"><i className="fa fa-linkedin"></i></Link></li>
-                                </ul>
+
+                {/*Contact Content start*/}
+                <main>
+
+                    {/*----Contact-banner-section----*/}
+                    <div classNmae="container-fluid contact-banner-sec" style={sectionStyle} />
+
+                    {/*--Contact Us Content--*/}
+                    <section classNmae="container contact-content">
+                        <div classNmae="row">
+                            {/*--Contact Information part--*/}
+                            <div classNmae="col-md-5">
+                                <h2 classNmae="contact-info">Contact Information</h2>
+                                <article classNmae="information-sec">
+                                    <p>Address: Flat – 02, Warren Hasting Court, Pier Road City, Gravesend, DA 11 9NL, United Kingdom</p>
+                                    <hr classNmae="border-bottom" />
+                                    <p>Phone Number: 800-820-9814</p>
+                                    <hr classNmae="border-bottom" />
+                                    <p>phone hours: Sales: Monday-Friday, 8 am to 9 pm EST, Saturday-Sunday, 8 am to 8 pm EST</p>
+                                    <hr classNmae="border-bottom" />
+                                    <ul classNmae="social-sec">
+                                        <li><a href="#"><i classNmae="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i classNmae="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i classNmae="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i classNmae="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </article>
                             </div>
+                            {/*--End Contact Information part--*/}
 
-                        </div>
-                        <div className="col-md-6 col-sm-12">
-                            <div className="row">
-                                <div className="col-md-8 offset-md-2">
-                                    <div className="contact-form-sec">
-                                        <p className="contact-info">Send us a message</p>
-                                        <form className="" action="">
-                                            <div className="form-group">
-                                                <label htmlFor="first-name">First Name</label>
-                                                <input type="text" className="form-control custom-input-btn" id="first-name" />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="last-name">Last Name</label>
-                                                <input type="text" className="form-control custom-input-btn" id="last-name" />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="email">Email</label>
-                                                <input type="email" className="form-control custom-input-btn" id="email" />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="phone">Phone</label>
-                                                <input type="number" className="form-control custom-input-btn" id="phone" />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="text-area">How can we help you?</label>
-                                                <textarea className="form-control custom-text-area" id="text-area" />
-                                            </div>
-                                            <button type="submit" className="btn btn-primary custom-button"><b>SEND YOUR MESSAGE</b></button>
-                                        </form>
-                                    </div>
+                            {/*--Contact form part--*/}
+                            <div classNmae="col-md-7">
+                                <div classNmae="d-flex justify-content-start align-items-center">
+                                    <h2>Contact Us</h2>
                                 </div>
+                                <form classNmae="contact-form-sec">
+                                    <div classNmae="form-row">
+                                        <div classNmae="form-group col-md-6">
+                                            <div classNmae="form-row">
+                                                <div classNmae="form-group col-md-12">
+                                                    <input type="text" classNmae="form-control custom-input-btn" id="name" placeholder="Name" />
+                                                </div>
+                                                <div classNmae="form-group col-md-12">
+                                                    <input type="email" classNmae="form-control custom-input-btn" id="email" placeholder="Email" />
+                                                </div>
+                                                <div classNmae="form-group col-md-12">
+                                                    <input type="number" classNmae="form-control custom-input-btn" id="mobile" placeholder="Mobile" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div classNmae="form-group col-md-6">
+                                            <textarea classNmae="form-control custom-text-area" id="text-area" placeholder="Type your comments"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" classNmae="btn slide_right custom-button"><b>SEND YOUR MESSAGE</b></button>
+                                </form>
                             </div>
+                            {/*End contact form part*/}
                         </div>
-                    </div>
+                        {/*End row*/}
+                    </section>
+                    {/*END Contact Us Content*/}
 
-                    <div className="map-sec">
-                        <p className="contact-info">Find Us</p>
-                        <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.7829254851113!2d0.3532264159232775!3d51.443780323173556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b7dc29385d83%3A0x2f85d54dbb1e15c1!2sCombosoft!5e0!3m2!1sen!2sbd!4v1581237133948!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style={{border:0}} allowfullscreen="" />
-                    </div>
-                </div>
+                     {/*--Iframe Section-- */}
+                    <section classNmae="map-sec">
+                        <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.7829254851113!2d0.3532264159232775!3d51.443780323173556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b7dc29385d83%3A0x2f85d54dbb1e15c1!2sCombosoft!5e0!3m2!1sen!2sbd!4v1581237133948!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></Iframe>
+                    </section>
+
+                </main>
+               {/*--End Contact content-- */}
 
                 <Footer />
             </div>

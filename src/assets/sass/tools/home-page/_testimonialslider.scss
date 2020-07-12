@@ -6,7 +6,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 90%;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 20px;
+  opacity: 0.8;
 
   img{
     margin-top: 59px;
@@ -21,13 +24,16 @@
     margin-top: 26px;
     margin-bottom: 48px;
   }
-
-  //.quotation{
-  //  font-size: 40px;
-  //  position: absolute;
-  //  display: flex;
-  //  align-items: center;
-  //}
+   blockquote {
+    display: block;
+    font-size: 15px;
+    position: relative;
+     span {
+       .fa{
+         color: #FFFFFF;
+       }
+     }
+  }
 
   .carousel-indicators{
     li{
@@ -39,6 +45,30 @@
 
   .carousel-item {
     padding: 60px 110px 60px 110px;
+  }
+
+  @media (max-width: 700px){
+    .carousel-item{
+      padding: 80px;
+    }
+  }
+
+
+  @media (max-width: 580px){
+    .carousel-item{
+      padding: 70px;
+    }
+  }
+
+  @media (max-width: 480px){
+    .carousel-item{
+      padding: 60px;
+    }
+  }
+  @media (max-width: 380px){
+    .carousel-item{
+      padding: 50px;
+    }
   }
 
   .carousel-item {

@@ -4,18 +4,18 @@
 .footer_bg{
   background-color: #09536D;
   .footer-content{
-    padding: 113px 120px 64px 121px;
+    padding: 60px 60px 30px 60px;
     @media (max-width: 480px) {
       padding: 113px 60px 64px 60px;
     }
     @media (max-width: 768px), (max-width: 1024px){
-      padding: 113px 20px 64px 30px;
+      padding: 50px 20px 64px 30px;
     }
     .footer_des{
       @media (max-width: 480px){
         margin-bottom: 25px;
       }
-      .site-a{
+      .site-link{
         font-size: 20px;
         margin-bottom: 5px;
         font-family: $wmsFont3;
@@ -23,7 +23,7 @@
           font-size: 18px;
         }
       }
-      .media-a{
+      .media-link{
         font-size: 25px;
         margin-bottom: 10px;
         @media (max-width: 480px){
@@ -58,7 +58,23 @@
           color: #FFFFFF;
           padding-left: 19px;
           padding-right: 19px;
-          &:first-child{
+          @media (max-width: 1180px){
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          @media (max-width: 1080px){
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+          @media (max-width: 991px){
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          @media (max-width: 768px){
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          &:first-child {
             padding-left: 0;
           }
           &:last-child {
@@ -96,10 +112,11 @@
 
 
     .copyright{
-      font-size: 13px;
-      color: #FFFFFF;
-      @media (max-width: 480px){
-        line-height: 25px;
+      font-size: 14px;
+      padding-top: 20px;
+      color: $textColor;
+      @media (max-width: 767px){
+        padding-top: 0;
       }
     }
   }

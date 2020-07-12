@@ -1,29 +1,63 @@
 
 //NAVBAR SECTION (COMBOSOFT)
 
-*{
-  box-sizing: border-box;
-}
-
 nav {
   background-color: #2E2E32;
-  .navbar-toggler {
-    color: #17a2b8a8;
-    border-color: #17a2b8a8;
+  position: relative;
+  @media screen and (max-width: 480px){
+    .navbar-brand{
+      margin-right: -10rem;
+      img{
+        width: 70%;
+      }
+    }
   }
+
+  .navbar-toggler {
+    color: #17a2b8a8!important;
+    border-color: #17a2b8a8!important;
+    @media screen and (max-width: 480px){
+      .navbar-toggler-icon{
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
+  }
+
+  @media (min-width: 992px){
+    .search-icon{
+      display: none;
+    }
+    .mbl-search-box{
+      display: none;
+    }
+  }
+  @media (max-width: 991px){
+    .signin-signup{
+      justify-content: center!important;
+    }
+    .mbl-search-box {
+      display: none;
+    }
+  }
+
+
   div {
     ul {
-      font-size: 22px;
+      font-size: 16px;
+      padding-right: 30px;
       li{
-      .nav-link{
+        letter-spacing: 1.5px;
+        a{
           color: #FFFFFF!important;
+          font-family: Dosis, Regular;
         }
-       .nav-link:hover, .nav-link:focus{
-          color: #0062cc!important;
+        a:hover, a:focus{
+          color: $btnbgColor!important;
         }
       }
-       li.active > .nav-link {
-        color: #0062cc!important;
+      li > a:active {
+        color: $btnbgColor!important;
       }
     }
 
@@ -32,39 +66,71 @@ nav {
       li{
         list-style: none;
         font-size: 22px;
-        .sign-in{
-          color: #FFFFFF!important;
-        }
-        .sign-in:hover, .sign-in:focus{
-          color: #0062cc!important;
-        }
-
         .btn-signup{
-          color: #2E2E32;
-          background-color: #FFFFFF;
-          border-color: #FFFFFF;
+          color: $textColor;
+          border: 1px solid $btnbgColor;
           padding: 3px 56px 3px 56px;
           border-radius: 10px;
           font-size: 22px;
         }
         .btn-signup:hover{
-          background-color: #0062cc;
-          color: #FFFFFF;
+          background-color: $btnbgColor;
+          color: $textColor;
         }
+        .search-box {
+          position: absolute;
+          top: 73px;
+          left: -22px;
+          width: 100%;
+          max-height: 0;
+          z-index: 9999;
+          display: none;
+          transition: all 0.3s;
+
+          input[type="text"] {
+            width: 100%;
+            font-size: 16px;
+            padding: 4px 30px;
+            margin-left: 22px;
+            outline: 0;
+            height: 52px;
+            background-color: #2e2e32;
+            border-color: #08a7d000;
+            color: $textColor;
+            opacity: 80%;
+          }
+          ::placeholder{
+            color: $textColor;
+            opacity: 80%;
+          }
+          ::-ms-input-placeholder{
+            color: $textColor;
+            opacity: 80%;
+          }
+          ::-ms-input-placeholder{
+            color: $textColor;
+            opacity: 80%;
+          }
+
+        }
+
+      }
+
+      li:last-child{
+        margin-right: -15px;
       }
 
     }
 
   }
 
-
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: 1440px){
     div {
       ul {
-        font-size: 18px;
+        font-size: 16px;
         li{
-         .nav-link{
-            color: #FFFFFF!important;
+          a{
+            color: $textColor!important;
           }
         }
       }
@@ -72,24 +138,20 @@ nav {
 
       form {
         li{
-          list-style: none;
-          font-size: 18px;
           .btn-signup{
-            padding: 3px 30px 3px 30px;
-            font-size: 18px;
+            padding: 6px 30px 6px 30px;
+            font-size: 16px;
           }
           .btn-signup:hover{
-            background-color: #0062cc;
-            color: #FFFFFF;
+            background-color: $btnbgColor;
+            color: $textColor;
           }
         }
-
       }
 
     }
 
   }
-
 
 
   @media screen and (max-width: 1024px){
@@ -97,8 +159,8 @@ nav {
       ul {
         font-size: 16px;
         li{
-         .nav-link{
-            color: #FFFFFF!important;
+          a{
+            color: $textColor!important;
           }
         }
       }
@@ -106,15 +168,13 @@ nav {
 
       form {
         li{
-          list-style: none;
-          font-size: 16px;
           .btn-signup{
             padding: 3px 30px 3px 30px;
             font-size: 16px;
           }
           .btn-signup:hover{
-            background-color: #0062cc;
-            color: #FFFFFF;
+            background-color: $btnbgColor;
+            color: $textColor;
           }
         }
 
@@ -123,41 +183,37 @@ nav {
     }
 
   }
+
 
   @media screen and (max-width: 991px){
-    div{
-      background-color: #09a8c145;
-      padding-left: 10px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
     div {
-      background-color: #09a8c145;
-      padding-left: 10px;
+      //padding-left: 10px;
       ul {
         font-size: 16px;
-        li{
-         .nav-link{
-            color: #FFFFFF!important;
-          }
-        }
+        margin-top: 10px;
+        border-top: 1px solid #212529;
+        padding: 5px 0;
       }
-
 
       form {
         padding-top: 15px;
-        margin-left: -15px;
+        padding-bottom: 9px;
+        border-top: 1px solid #212529;
+        display: block!important;
         li{
-          list-style: none;
-          font-size: 16px;
-          .btn-signup{
-            padding: 3px 56px 3px 56px;
-            font-size: 16px;
-          }
-          .btn-signup:hover{
-            background-color: #0062cc;
+          .signup {
+            background-color: #343a40;
             color: #FFFFFF;
+            //margin-left: -8px;
+            //line-height: 40px;
+          }
+          .signup:hover{
+            background-color: #343a40;
+            color: #0062cc;
+          }
+
+          &:first-child{
+            display: none;
           }
         }
 
@@ -167,74 +223,49 @@ nav {
   }
 
 
-  @media screen and (max-width: 480px) {
+
+  @media screen and (max-width: 768px) {
     div {
-      background-color: #09a8c145;
-      padding-left: 10px;
       ul {
         font-size: 16px;
-        li{
-         .nav-link{
-            color: #FFFFFF!important;
-          }
-        }
       }
-
 
       form {
         li{
           list-style: none;
           font-size: 16px;
-          .btn-signup{
-            padding: 3px 56px 3px 56px;
-            font-size: 16px;
-          }
-          .btn-signup:hover{
-            background-color: #0062cc;
-            color: #FFFFFF;
-          }
         }
-
       }
-
     }
   }
 
+}
 
-  @media screen and (max-width: 380px) {
-    div {
-      ul {
-        font-size: 16px;
-        li{
-         .nav-link{
-            color: #FFFFFF!important;
-          }
+@media(max-width: 420px){
+  nav{
+    div{
+      #mbl-search-icon{
+        img{
+          width: 24px;
+          height: 24px;
         }
       }
-
-
-      form {
-        li{
-          list-style: none;
-          font-size: 16px;
-          .btn-signup{
-            padding: 3px 56px 3px 56px;
-            font-size: 16px;
-          }
-          .btn-signup:hover{
-            background-color: #0062cc;
-            color: #FFFFFF;
-          }
-        }
-
-      }
-
     }
-
   }
+}
 
 
-
+@media(max-width: 375px){
+  nav{
+    div{
+      #mbl-search-icon{
+        img{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
 }
 
 
