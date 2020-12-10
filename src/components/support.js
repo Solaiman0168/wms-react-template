@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Iframe from 'react-iframe';
-import { Link } from 'react-router-dom';
 import ImageContactBannerSec from "../assets/images/contact-bg.png";
 
 
@@ -25,7 +24,7 @@ class Support extends Component {
                 <main>
 
                     {/*----Contact-banner-section----*/}
-                    <div classNmae="container-fluid contact-banner-sec" style={sectionStyle} />
+                    <div classNmae="container-fluid contact-banner-sec" style={{sectionStyle}} />
 
                     {/*--Contact Us Content--*/}
                     <section classNmae="container contact-content">
@@ -41,10 +40,10 @@ class Support extends Component {
                                     <p>phone hours: Sales: Monday-Friday, 8 am to 9 pm EST, Saturday-Sunday, 8 am to 8 pm EST</p>
                                     <hr classNmae="border-bottom" />
                                     <ul classNmae="social-sec">
-                                        <li><a href="#"><i classNmae="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i classNmae="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i classNmae="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i classNmae="fa fa-linkedin"></i></a></li>
+                                        <li><a href="/#"><i classNmae="fa fa-facebook"></i></a></li>
+                                        <li><a href="/#"><i classNmae="fa fa-twitter"></i></a></li>
+                                        <li><a href="/#"><i classNmae="fa fa-instagram"></i></a></li>
+                                        <li><a href="/#"><i classNmae="fa fa-linkedin"></i></a></li>
                                     </ul>
                                 </article>
                             </div>

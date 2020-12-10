@@ -60,7 +60,7 @@ class Landingpage extends Component {
                                             <h3>Your Inventory management app to control all your warehouse
                                                 operations</h3>
                                             <p className="text-muted">See warehouse in action</p>
-                                            <a className="demo-btn" href="#"><i className="fa fa-arrow-right"></i>&nbsp; SCHEDULE A FREE DEMO </a>
+                                            <a className="demo-btn" href="/#"><i className="fa fa-arrow-right"></i>&nbsp; SCHEDULE A FREE DEMO </a>
                                         </article>
 
                                 </div>
@@ -150,7 +150,7 @@ class Landingpage extends Component {
                                         occaecat cupidatat non
                                         proident, sunt in culpa qui officia deserunt mollit anim
                                     </p>
-                                    <a className="btn readmore_btn" href="#">Read More</a>
+                                    <a className="btn readmore_btn" href="/#">Read More</a>
                                 </article>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ class Landingpage extends Component {
                                         occaecat cupidatat non
                                         proident, sunt in culpa qui officia deserunt mollit anim
                                     </p>
-                                    <a className="btn readmore_btn" href="#">Read More</a>
+                                    <a className="btn readmore_btn" href="/#">Read More</a>
                                 </article>
                                 <div className="col-md-7 col-sm-12" style={sectionStyle2}>
                                     <Image className="wms-Image-section" src="assets/images/wms2.png" alt="WMS-IMAGE" />
@@ -196,7 +196,7 @@ class Landingpage extends Component {
                                         occaecat cupidatat non
                                         proident, sunt in culpa qui officia deserunt mollit anim id
                                     </p>
-                                    <a className="btn readmore_btn" href="#">Read More</a>
+                                    <a className="btn readmore_btn" href="/#">Read More</a>
                                 </article>
                             </div>
                         </div>
